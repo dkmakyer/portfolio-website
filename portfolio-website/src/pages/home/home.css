@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+}
+.card-container{
+    border: none;
+}
+.greeting{
+    color: rgb(199, 32, 185);
+}
+.button{
+    background-color:rgb(199, 32, 185);
+    border: none;
+    border-radius: 2px;
+    margin-left: 2px;
+}
+.second{
+    background-color:rgb(255, 255, 255);
+    color:rgb(199, 32, 185) ;
+
+}
+.job{
+    margin-bottom: 15px;
+}
+span{
+    display: block;
+    margin-bottom: 5px;
+}
+.font-icon{
+    margin-left: 4px;
+}
+.name{
+    font-size: 25px;   
+}
+.home-page{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.intro, .profile-pic{
+    width: 40rem;
+    min-height: 40rem;
+
+}
+@media screen and (max-width:1000px){
+    .home-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
