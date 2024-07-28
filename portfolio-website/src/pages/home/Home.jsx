@@ -44,7 +44,7 @@ const Home = () => {
           </Card>
         </div>
         <div className="skills">
-          <Card>
+          <Card> 
             <CardText>
               <p>
                 <span><FontAwesomeIcon className="font-icon" icon="fa-html5" />HTML</span>
