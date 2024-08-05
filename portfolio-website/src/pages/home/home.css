@@ -1,53 +1,125 @@
-*{
-    box-sizing: border-box;
-    padding: none;
-    margin: none;
-}
-.card-container{
-    border: none;
-}
-.greeting{
-    color: rgb(199, 32, 185);
-}
-.button{
-    background-color:rgb(199, 32, 185);
-    border: none;
-    border-radius: 2px;
-    margin-left: 2px;
-}
-.second{
-    background-color:rgb(255, 255, 255);
-    color:rgb(199, 32, 185) ;
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-.job{
-    margin-bottom: 15px;
+
+.top{
+    font-size: 2rem;
 }
-span{
+.self-intro{
+    font-size: 1.5rem;
+}
+
+span {
     display: block;
     margin-bottom: 5px;
 }
-.font-icon{
+
+.font-icon {
     margin-left: 4px;
 }
-.name{
-    font-size: 25px;   
-}
-.home-page{
+
+.home-page {
+    padding: 20px;
     margin: 5rem;
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
 }
-.intro, .profile-pic{
-    width: 40rem;
-    min-height: 40rem;
 
-}
-@media screen and (max-width:1000px){
-    .home-page{
-        display: grid;
+@media screen and (max-width: 1000px) {
+    .home-page {
         grid-template-columns: 1fr;
         gap: 10px;
     }
+}
+
+
+.intro, .profile-pic {
+    width: 40rem;
+    min-height: 40rem;
+}
+
+.greeting {
+    color: rgb(199, 32, 185);
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+
+.card-container {
+    margin: auto;
+    max-width: 600px;
+    border: none;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: rgb(199, 32, 185);
+    border: none;
+    border-radius: 2px;
+    margin-left: 2px;
+    font-size: 1.6rem;
+}
+
+.button.first {
+    background-color: rgb(199, 32, 185);
+}
+
+.button.second {
+    background-color: rgb(255, 255, 255);
+    color: rgb(199, 32, 185);
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills .card-body p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills .card-body span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.img-block{
+    margin-right: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
