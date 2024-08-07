@@ -3,6 +3,12 @@
     padding: none;
     margin: none;
 }
+.bg-body-tertiary{
+    font-size: 1.1rem;
+    width: 100vw;
+    position: fixed;
+    transform: translate(3px, -80px);
+}
 .right-side{
     margin-left: 30rem;
     background-color: rgba(144, 39, 230, 0.4);

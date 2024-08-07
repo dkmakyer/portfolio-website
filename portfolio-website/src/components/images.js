@@ -7,6 +7,7 @@ import git from "../assets/git.svg";
 import aws from "../assets/aws-2.svg";
 import tailwindcss from "../assets/tailwindcss.svg";
 import svelte from "../assets/svelte-1.svg";
+import myPic from "../assets/me-at-amalitech.jpg";
 
 const images = {
     html,
@@ -18,6 +19,7 @@ const images = {
     aws,
     tailwindcss,
     svelte,
+    myPic
 };
 
 export default images;

@@ -13,12 +13,12 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <div className="middle">
-            <Nav.Link className="part" href="#about">ABOUT ME</Nav.Link>
-            <Nav.Link className="part" href="#projects">PROJECTS</Nav.Link>
-            <Nav.Link className="part" href="#contact-me">CONTACT ME</Nav.Link>
+              <Nav.Link className="part" href="#about">ABOUT ME</Nav.Link>
+              <Nav.Link className="part" href="#projects">PROJECTS</Nav.Link>
+              <Nav.Link className="part" href="#contact-me">CONTACT ME</Nav.Link>
             </div>
             <div className="right-side">
-            <Nav.Link href="#contact-me">HIRE ME</Nav.Link>
+              <Nav.Link href="#contact-me">HIRE ME</Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>
