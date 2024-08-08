@@ -5,8 +5,10 @@
 }
 .bg-body-tertiary{
     font-size: 1.1rem;
+    padding-top: 20px;
     width: 100vw;
     position: fixed;
+    z-index: 1;
     transform: translate(3px, -80px);
 }
 .right-side{
@@ -18,7 +20,7 @@
 }
 .middle{
     display: flex;
-    margin-left: 15rem;
+    margin-left: 27rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
 }
@@ -28,6 +30,7 @@
 }
 .left-side{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 .me-auto{
     display: flex;

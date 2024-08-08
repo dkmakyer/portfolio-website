@@ -3,6 +3,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    font-size: 13px;
 }
 
 /* Typography */
@@ -29,7 +31,7 @@ span {
     padding: 20px;
     margin: 5rem;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 800px 200px;
     gap: 10px;
 }
 
@@ -60,24 +62,45 @@ span {
 
 /* Self Introduction */
 .mySelf {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     font-size: 1.5rem;
 }
+.mySelf h1{
+    grid-column: 1/5;
+}
+.mySelf-container{
+    border: none;
+}
 
-.paragraph {
-    padding: 10px;
+.paragraph{
+    font-size: 14px;
+}
+
+.paragraph:nth-of-type(1){
+    grid-column: 1/4;
+}
+.paragraph:nth-of-type(2){
+    grid-column: 2/5;
+}
+.paragraph:nth-of-type(3){
+    grid-column: 1/4;
+}
+.paragraph:nth-of-type(4){
+    grid-column: 2/5;
+}
+.paragraph:nth-of-type(5){
+    grid-column: 1/4;
 }
 
 .my-pic .me{
-    width: 600px;
-    height: 800px;
+    width: 450px;
+    height: 550px;
     margin-bottom: 60px ;
     border-radius: 5px;
-    
 }
 .my-pic{
-    transform: translate(-150px, -40px);
+    transform: translate(-50px, -40px);
 }
 
 /* Card Container */
@@ -152,8 +175,7 @@ img {
 
 .images {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+    grid-template-columns: auto auto;
 }
 
 .img-block {
@@ -162,4 +184,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
 }

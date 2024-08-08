@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './home.css';
 import images from "../../components/images.js";
+import ProjectCard from '../../components/project-card/ProjectCard';
 
 const Home = () => {
   const { html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic } = images;
@@ -35,7 +36,7 @@ const Home = () => {
         <img className='me' src={myPic} alt='A picture of me' />
       </div>
       <div className='detailed-intro'>
-        <Card>
+        <Card className='mySelf-container'>
           <Card.Body>
             <Card.Text>
               <div className="mySelf">
@@ -81,6 +82,15 @@ const Home = () => {
             </Card.Text>
           </Card.Body>
         </Card>
+      </div>
+      <div>
+        <h2>Some of my projects</h2>
+        <div className="projects">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
       </div>
     </div>
   );
