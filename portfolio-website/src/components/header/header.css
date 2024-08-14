@@ -11,18 +11,15 @@
     z-index: 1;
     transform: translate(3px, -80px);
 }
-.right-side{
-    margin-left: 30rem;
-    background-color: rgba(144, 39, 230, 0.4);
-    border-radius: 3px;
-    width: 6rem;
-    font-weight: 500;
-}
+
 .middle{
     display: flex;
-    margin-left: 27rem;
+    margin-left: 35rem;
+    min-width: 500px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
+    justify-content: space-evenly;
+
 }
 .middle .part{
     width: 8rem;

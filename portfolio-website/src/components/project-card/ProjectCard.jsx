@@ -2,21 +2,25 @@ import React from "react";
 import "./project-card.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import images from "../images";
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+  const {react} = images;
+
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+    <Card className="project-card" >
+      <Card.Img className="project-img" variant="top" src={react} />
+      <Card.Body className="project-body">
+        <Card.Title className="project-title">{props.name}</Card.Title>
+        <Card.Text className="project-text">
+            {props.info}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Explore</Button>
       </Card.Body>
     </Card>
   )
 }
 
 export default ProjectCard
+
+// style={{ width: '80rem', display: "flex", flexDirection: "row"}}
