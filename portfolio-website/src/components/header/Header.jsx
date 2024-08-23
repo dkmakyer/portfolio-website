@@ -1,26 +1,31 @@
-import React from "react";
+import {useState} from "react";
 import "./header.css";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const links = [
+    {id: "1", endPoint:"/",  name:"Home"},
+    {id: "2", endPoint:"about",  name:"About-me"},
+    {id: "3", endPoint:"projects",  name:"Projects"},
+    {id: "4", endPoint:"contact-me",  name:"Contact-me"}
+  ];
+
+  const [active, setActive] =  useState(null);
+  function addActiveClass(id){
+    setActive(id);
+  } 
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home" className="left-side">KWASI-MENSAH</Navbar.Brand>
-        <Navbar.Toggle className="nav-bar-toggle" aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <div className="middle">
-              <Nav.Link className="part" href="#about">ABOUT ME</Nav.Link>
-              <Nav.Link className="part" href="#projects">PROJECTS</Nav.Link>
-              <Nav.Link className="part" href="#contact-me">CONTACT ME</Nav.Link>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+   <>
+    <div className="header-container">
+      <NavLink to="/" className="my-name">Kwasi <span>Mensah</span></NavLink>      
+      <nav className="navigation">
+        {links.map(link => (
+          <NavLink key={link.id} className={active === link.id ? "active" : null} to={link.endPoint} onClick={addActiveClass}>{link.name}</NavLink>
+        ))}
+      </nav>      
+    </div>
+   </>
   );
 };
 

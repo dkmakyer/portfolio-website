@@ -1,47 +1,40 @@
 *{
     box-sizing: border-box;
-    padding: none;
-    margin: none;
-}
-.bg-body-tertiary{
-    font-size: 1.1rem;
-    padding-top: 20px;
-    width: 100vw;
-    position: fixed;
-    z-index: 1;
-    transform: translate(3px, -80px);
+    margin: 0;
+    padding: 0;
 }
 
-.middle{
-    display: flex;
-    margin-left: 35rem;
-    min-width: 500px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    justify-content: space-evenly;
-
-}
-.middle .part{
-    width: 8rem;
-    margin-left: -1rem;
-}
-.left-side{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-.me-auto{
+.header-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 20px;
 }
-@media screen and (max-width: 1440px){
-    .middle{
-        transform: translateX(-8rem);
-    }
-    .right-side{
-        transform: translateX(-17.5rem);
-        padding-left: 7px;
-    }
-    .right-side:hover{
-        background-color: rgba(144, 39, 230, 0.2);
-    }
+.my-name{
+    transform:translateX(150px);
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.my-name span{
+    color: rgb(247, 153, 247);
+}
+.my-name span:hover{
+    color: rgb(247, 204, 255);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    transition: all 0.2s ease-in;
+}
+
+.navigation{
+    transform:translateX(-300px);
+}
+.navigation a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+.navigation .active{
+    color:rgb(247, 153, 247) ;
+    font-size: 20px;
+    text-decoration: underline;
 }
