@@ -1,11 +1,23 @@
-import React from 'react';
-import './home.css';
+import React from "react";
+import "./home.css";
+import { Link } from "react-router-dom";
+import {useInterval} from "react-use";
 // import images from "../../components/images.js";
 // import ProjectCard from '../../components/project-card/ProjectCard';
 
 const Home = () => {
-  // const { html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic } = images;
-
+  // const {
+  //   html,
+  //   css,
+  //   js,
+  //   react,
+  //   bootstrap,
+  //   git,
+  //   aws,
+  //   tailwindcss,
+  //   svelte,
+  //   myPic,
+  // } = images;
 
   // const projectInfo = [
   //   {key: 1, name: "Social Networking App for book enthusiats" , info: "This was created as a way to connect individuals who are reading freaks of nature. It is interesting how like-minded people click, and this app takes that into account."},
@@ -31,11 +43,52 @@ const Home = () => {
   //   { key: "8b", source: tailwindcss, alternative: "TailwindCss", text: "TailwindCss"},
   //   { key: "9b", source: svelte, alternative: "Svelte", text: "Svelte"}
   // ];
+  const [job, setJob] = React.useState("Frontend Developer");
+  const professions = ["Frontend Developer", "AWS Certified Cloud Practitioner", "Chemical Engineer"];
+ 
+
+  // React.useEffect(()=>{
+  //   const intervalId = setInterval(()=> {
+  //     setJob(professions[(professions.indexOf(job) + 1) % professions.length]);
+  //   }, 2000)
+  // }, [job, professions]);
+  //the useEffect one made the change look glitchy
+  useInterval(()=>{
+    setJob(professions[(professions.indexOf(job) + 1) % professions.length]);
+  }, 2000)
+
 
   return (
     <>
       <div className="home-container">
-        <header/>
+        <header />
+        <main>
+          <div className="introduction">
+            <h1>
+              Hello,I am <span className="my-name">David</span>.
+            </h1>
+            <h2>
+              {job === "AWS Certified Cloud Practitioner" ? (<span>An</span>): (<span>A</span>) } <span className="job">{job}</span>.
+            </h2>
+            <p>
+              I enjoy transforming UI designs into visually appealing and
+              functional websites. I am passionate about crafting user-friendly
+              interfaces and dedicated to delivering high-quality work.
+              Currently, I am expanding my skills to become a full-stack
+              developer. Explore my portfolio to see my journey and projects!
+            </p>
+            <div className="socials">
+
+            </div>
+            <div className="buttons">
+              <Link to="/projects">Projects</Link>
+              <button>Download Resume</button>
+            </div>
+          </div>
+          <div className="intro-img">
+            <p className="intro-img-container"></p>
+          </div>
+        </main>
       </div>
     </>
   );

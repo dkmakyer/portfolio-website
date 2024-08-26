@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const links = [
     {id: "1", endPoint:"/",  name:"Home"},
-    {id: "2", endPoint:"about",  name:"About-me"},
-    {id: "3", endPoint:"projects",  name:"Projects"},
-    {id: "4", endPoint:"contact-me",  name:"Contact-me"}
+    {id: "2", endPoint:"/about",  name:"About-me"},
+    {id: "3", endPoint:"/projects",  name:"Projects"},
+    {id: "4", endPoint:"/contact-me",  name:"Contact-me"}
   ];
 
   const [active, setActive] =  useState(null);
