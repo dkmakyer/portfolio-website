@@ -43,19 +43,34 @@ const Home = () => {
   //   { key: "8b", source: tailwindcss, alternative: "TailwindCss", text: "TailwindCss"},
   //   { key: "9b", source: svelte, alternative: "Svelte", text: "Svelte"}
   // ];
-  const [job, setJob] = React.useState("Frontend Developer");
+  const [job, setJob] = React.useState("");
   const professions = ["Frontend Developer", "AWS Certified Cloud Practitioner", "Chemical Engineer"];
- 
+  const [currentLetterIndex, setCurrentLetterIndex] = React.useState(0);
+  const [currentJob, setCurrentJob] = React.useState(professions[0]);
+  const [transitioning, setTransitioning] = React.useState(false);
 
   // React.useEffect(()=>{
-  //   const intervalId = setInterval(()=> {
-  //     setJob(professions[(professions.indexOf(job) + 1) % professions.length]);
-  //   }, 2000)
-  // }, [job, professions]);
-  //the useEffect one made the change look glitchy
+  //   setJob("");
+  // }, [currentJob]);
+
   useInterval(()=>{
-    setJob(professions[(professions.indexOf(job) + 1) % professions.length]);
-  }, 2000)
+    if(!transitioning){
+      const currentJobArray = currentJob.split("");
+      const currentLetter = currentJobArray[currentLetterIndex];
+      if(job.length === currentJob.length){
+        setTransitioning(true);
+        setTimeout(()=>{
+          setJob("");
+          setCurrentJob(professions[(professions.indexOf(job) + 1) % professions.length]);
+          setCurrentLetterIndex(0);
+          setTransitioning(false);
+        }, 1000);
+      }else{
+        job === "" ? setJob(currentLetter) : setJob(prevJob => prevJob + currentLetter);
+        setCurrentLetterIndex((currentLetterIndex + 1) % currentJobArray.length);
+      }  
+    }
+  }, 100);
 
 
   return (
@@ -68,7 +83,7 @@ const Home = () => {
               Hello,I am <span className="my-name">David</span>.
             </h1>
             <h2>
-              {job === "AWS Certified Cloud Practitioner" ? (<span>An</span>): (<span>A</span>) } <span className="job">{job}</span>.
+              {job.split("")[0] === "A" ? (<span>An</span>): (<span>A</span>) } <span className="job">{job}</span>
             </h2>
             <p>
               I enjoy transforming UI designs into visually appealing and
