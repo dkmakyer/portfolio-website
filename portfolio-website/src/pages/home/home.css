@@ -59,7 +59,7 @@ main{
     height: 40px;
     text-align: center;
     padding-top: 5px;
-    transition: background-color 0.9s ease-in-out;
+    transition: background-color 0.7s ease-in-out;
 }
 .buttons button{
     text-decoration: none;
@@ -71,7 +71,7 @@ main{
     text-align: center;
     padding-top: 2px;
     background-color: transparent;
-    transition: background-color 0.9s ease-in-out;
+    transition: background-color 0.7s ease-in-out;
 }
 .buttons a:hover , .buttons button:hover{
     background-color: rgb(247, 153, 247);

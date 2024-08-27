@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.about-me-header{
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    transform: translate(40.9rem, -3.5rem);
+    padding: 2rem;
+}
+.about-me-header a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: rgb(247, 153, 247);
+}
+.about-me-header .is-active{
+    text-decoration: underline;
+}

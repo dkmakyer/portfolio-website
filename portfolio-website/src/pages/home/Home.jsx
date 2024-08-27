@@ -72,6 +72,13 @@ const Home = () => {
     }
   }, 100);
 
+  function handleDownload(){
+    const link = document.createElement("a");
+    link.href = "https://drive.google.com/file/d/1-cre1Pntc0uAErKKh8XLwmWQFK_33-Zj/view?usp=sharing";
+    link.download = "DAVID_AKYER_RESUME.pdf";
+    link.click();//download should be triggered automatically when the link is clicked
+  }
+
 
   return (
     <>
@@ -80,7 +87,7 @@ const Home = () => {
         <main>
           <div className="introduction">
             <h1>
-              Hello,I am <span className="my-name">David</span>.
+              Hello, I am <span className="my-name">David</span>.
             </h1>
             <h2>
               {job.split("")[0] === "A" ? (<span>An</span>): (<span>A</span>) } <span className="job">{job}</span>
@@ -93,11 +100,11 @@ const Home = () => {
               developer. Explore my portfolio to see my journey and projects!
             </p>
             <div className="socials">
-
+            {/*Dont forget to add the images to link to your linkedIn and github */}
             </div>
             <div className="buttons">
               <Link to="/projects">Projects</Link>
-              <button>Download Resume</button>
+              <button onClick={handleDownload}>Download Resume</button>
             </div>
           </div>
           <div className="intro-img">
