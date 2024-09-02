@@ -81,6 +81,8 @@ main{
     color: rgb(247, 153, 247);
     color: black;
 }
-.github-icon, .linkedin-icon{
+#github, #linkedIn{
     color: rgb(247, 153, 247);
+    font-size: 30px;
+    margin: 5px 0 10px 10px;
 }

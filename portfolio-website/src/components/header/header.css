@@ -26,12 +26,25 @@
 }
 
 .navigation{
-    transform:translateX(-300px);
+    position: relative;
+    transform:translateX(-400px);
 }
 .navigation a{
     margin-left: 30px;
     text-decoration: none;
     color: white;
+    font-weight: 600;
+}
+
+.navigation a:nth-of-type(4){
+    position: absolute;
+    border: 1px solid rgb(247, 153, 247);
+    border-radius: 2px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    transform: translateX(70px);
+    padding: 5px 0 0 5px;
 }
 .navigation .active{
     color:rgb(247, 153, 247) ;
