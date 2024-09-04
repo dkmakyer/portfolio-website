@@ -3,3 +3,57 @@
     margin: 0;
     padding: 0;
 }
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+    margin-top: 2rem;
+}
+.skills h2{
+    transform: translateX(35rem);    
+    color: rgb(247, 153, 247);
+}
+.skill:nth-of-type(1){
+    grid-column: 1/ 2;
+}
+.skill h4{
+    text-align: center;
+}
+.skill{
+    background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
+    color: rgb(0, 0, 0);
+    height: 34vh;
+    margin: 0;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    text-shadow: 1px 1px 0 rgb(255, 255, 255);
+    filter: blur(0.5px);
+    transition: all 0.9s ease;
+    box-sizing: border-box;
+}
+.skill:hover{
+    background-image: none;
+    border: 5px solid rgba(247, 153, 247);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-shadow: 1px 1px 0 rgb(247, 153, 247);
+    filter: none;
+}
+.skill ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skill ul .non-svg{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.svg{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
