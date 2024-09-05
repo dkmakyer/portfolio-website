@@ -14,7 +14,9 @@
     right: 0;
     left: 0;
     z-index: 1000;
-    margin-bottom: 5rem;
+    height: 70px;
+    transform: translateY(-20px);
+    background-color: rgb(0, 0, 0);
 }
 .my-name{
     transform:translateX(150px);

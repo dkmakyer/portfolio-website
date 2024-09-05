@@ -3,25 +3,12 @@ import "./home.css";
 import { Link } from "react-router-dom";
 // import {useInterval} from "react-use";
 import Typing from "react-typing-effect";
-import images from "../../components/images.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Example brand icon
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 
 // import ProjectCard from '../../components/project-card/ProjectCard';
 
 const Home = () => {
-  // const {
-  //   html,
-  //   css,
-  //   js,
-  //   react,
-  //   bootstrap,
-  //   git,
-  //   aws,
-  //   tailwindcss,
-  //   svelte,
-  //   myPic,
-  // } = images;
 
   // const projectInfo = [
   //   {key: 1, name: "Social Networking App for book enthusiats" , info: "This was created as a way to connect individuals who are reading freaks of nature. It is interesting how like-minded people click, and this app takes that into account."},
@@ -29,24 +16,6 @@ const Home = () => {
   //   {key: 3, name: "A Random Meme Generator App " , info: "A beginner's task, I know! I still learned to make API calls with this one."},
   // ];
 
-  // const introduction = [
-  //   {key: "1a", text: "I am actually a Chemical Engineering graduate who transitioned into tech at the last quarter of 2023. I find the field fascinating—maybe due to environmental influences—and have dedicated a year towards becoming competent in it."},
-  //   {key: "2a", text: "I started out as a Production Technician, taking inventory of production stock, making stock reservations, and analyzing production consumption to help predict the flow of profits and losses. Through this, I gained analytical and problem-solving skills required to thrive in any work environment."},
-  //   {key: "3a", text: "I first delved into frontend development because, unlike my graduating field, it was far from boring. It keeps me active every day with something new to learn and play with: new programming languages, new shortcuts to doing things. The overall process of interacting with a computer like your friend to make it do something for you is mesmerizing to me, and I have been dedicated to this goal ever since."},
-  //   {key: "4a", text: "I tend to take up leadership roles to help get the job done, as many people tend to shun such roles, not wanting to bear more responsibility than necessary. I also believe in the power of collaboration. Two heads are better than one in achieving any goal, so imagine what three or more can do together!"},
-  //   {key: "5a", text: "I hope this little spiel gave you a fair idea of who you'd be working with. Oh, and I'm also here for the money, but that's for later, when I become competent enough to earn my keep. For now, the goal is to become indispensable due to my competence. Therefore, the learning and application of what I've learned continues."}
-  // ];
-
-  // const imagesBlock = [
-  //   { key: "1b", source: html , alternative: "HTML", text: "HTML" },
-  //   { key: "2b", source: css, alternative:"CSS" , text: "CSS"},
-  //   { key: "3b", source: js, alternative: "JavaScript", text: "JavaScript"},
-  //   { key: "4b", source: react, alternative: "React", text: "React"},
-  //   { key: "5b", source: bootstrap, alternative: "Bootstrap", text: "Bootstrap"},
-  //   { key: "7b", source: aws, alternative: "AWS", text: "AWS"},
-  //   { key: "8b", source: tailwindcss, alternative: "TailwindCss", text: "TailwindCss"},
-  //   { key: "9b", source: svelte, alternative: "Svelte", text: "Svelte"}
-  // ];
   const [job, setJob] = React.useState("");
   const professions = React.useMemo(() => (["A Frontend Developer", "An AWS Certified Cloud Practitioner", "A Chemical Engineer"]), []);
   // const [currentLetterIndex, setCurrentLetterIndex] = React.useState(0);

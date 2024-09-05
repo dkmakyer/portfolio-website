@@ -31,7 +31,7 @@
     padding: 10px;
     text-shadow: 1px 1px 0 rgb(255, 255, 255);
     filter: blur(0.5px);
-    transition: all 0.9s ease;
+    transition: all 0.5s ease;
     box-sizing: border-box;
 }
 .skill:hover{
@@ -41,6 +41,7 @@
     box-sizing: border-box;
     text-shadow: 1px 1px 0 rgb(247, 153, 247);
     filter: none;
+    background-color: rgba(201, 198, 195, 0.2);
 }
 .skill ul{
     list-style: none;
