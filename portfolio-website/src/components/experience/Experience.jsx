@@ -3,14 +3,16 @@ import "./experience.css";
 import images from '../images';
 
 const Experience = () => {
-    const {craftlab, amalitech} = images;
+    const { craftlab, amalitech } = images;
     return (
         <>
             <div className="experience-container">
                 <h2>My Professional Experience</h2>
-                <div className='craftlab'>
+                <div className='cont craftlab'>
                     <div className="info">
-                        <h3>Meta-Craftlab <span>May 2024 - July 2024	Mumbai, Maharashtra, India</span></h3>
+                        <h3>Fullstack development Intern</h3>
+                        <p className='date'>May 2024 - July 2024</p>
+                        <p className='location'><span>Meta-Craftlab -</span>Mumbai Maharashtra, India</p>
                         <ul>
                             <li>Utilized Git for version control and GitHub for repository management, pivoting collaborative project workflows and code management.</li>
                             <li>Developed a responsive design tester for testing the responsiveness of websites with predefined dimensions using SvelteJs.</li>
@@ -20,10 +22,12 @@ const Experience = () => {
                     </div>
                     <p className='craftlab-logo'><img src={craftlab} alt="craftlab-logo" /></p>
                 </div>
-                <p className='divider'></p>
-                <div className='amalitech'>
+                <p className='divider'>waguannnn</p>
+                <div className='cont amalitech'>
                     <div className="info">
-                        <h3>AmaliTech Services GmbH <span>November 2023- March 2024	 Legon,GHANA</span></h3>
+                        <h3>AWS re/Start Learner, </h3>
+                        <p className='date'>November 2023- March 2024</p>
+                        <p className='location'><span>AmaliTech Services GmbH</span> - Legon,Ghana</p>
                         <ul>
                             <li>Utilized Linux system administration and automation through Bashscripting for efficient management and customization of system configurations, leading to streamlined operations and reduced downtime for the employer’s IT infrastructure.</li>
                             <li>Deployed and managed AWS cloud services via the management console and CloudFormation, empowering the employer to leverage scalable computing, storage, and networking solutions efficiently, optimizing resource utilization and reducing operational costs.</li>

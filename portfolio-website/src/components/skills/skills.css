@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/* let the skills be stacked one on top of the next in order, and when you hover over any of them, they get a bigger z index */
+
 .skills{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
