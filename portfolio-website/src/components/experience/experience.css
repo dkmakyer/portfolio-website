@@ -5,23 +5,54 @@
 }
 
 .experience-container{
+    box-sizing: border-box;
     padding: 50px 100px;
     margin-top: 2rem;
     color: rgb(255, 255, 255);
 }
+.experience-container .experience-grid{
+    display: grid ;
+    grid-template-columns: 1fr;
+}
+
 .experience-container h2{
     text-align: center;
 }
+
 .cont{
-    position: relative;
-    height: 50vh;
+    padding: 20px;
+    height: 60vh;
+    width: 43rem;
     box-sizing: border-box;
     margin-bottom: 30px;
-    background-color: red;
+    background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 rgb(255, 255, 255);
+    filter: blur(0.5px);
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+.cont:hover{
+    background-image: none;
+    border: 5px solid rgba(247, 153, 247);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-shadow: 1px 1px 0 rgb(247, 153, 247);
+    filter: none;
+    background-color: rgba(201, 198, 195, 0.2);
+    width: 47rem;
+    height: 65vh;
 }
 
+
 .date:nth-of-type(1){
-    transform: translate(31rem, -2rem);
+    transform: translate(31rem, -3.6rem);
+}
+.amalitech .date{
+    transform: translate(25rem, -3.6rem);
 }
 .location{
     transform: translateY(-2.5rem);
@@ -30,25 +61,34 @@
     font-size: 22px;
 }
 .info ul{
-    width: 24rem;
+    width: 38rem;
     transform: translateY(-40px);
 }
+.info h3{
+    display: flex;
+    align-items: center;
+}
+
 .cont:nth-of-type(1) img{
-    position: absolute;
-    transform: translate(25rem, -28.5rem);
+    transform: translate(2rem, 1rem);
     width: 70px;
     height: 70px;
     border-radius: 5px;
+    z-index: 2;
 }
+
 .cont:nth-of-type(2){
     margin-top: 50px;
    transform: translateX(30rem);
 }
+
 .cont:nth-of-type(2) img{
-    position: absolute;
-    transform: translate(-5rem, -33rem);
+    transform: translate(2rem, 1rem);
     width: 70px;
     height: 70px;
     border-radius: 5px;
+    z-index: 2;
 }
-
+.amalitech{
+    height: 65vh;
+}

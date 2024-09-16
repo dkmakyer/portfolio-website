@@ -39,6 +39,8 @@
 .skill:hover{
     background-image: none;
     border: 5px solid rgba(247, 153, 247);
+    height: 36vh;
+    width: 28rem;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
     text-shadow: 1px 1px 0 rgb(247, 153, 247);
