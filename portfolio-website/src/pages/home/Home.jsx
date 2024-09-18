@@ -6,17 +6,9 @@ import Typing from "react-typing-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 
-// import ProjectCard from '../../components/project-card/ProjectCard';
-
 const Home = () => {
 
-  // const projectInfo = [
-  //   {key: 1, name: "Social Networking App for book enthusiats" , info: "This was created as a way to connect individuals who are reading freaks of nature. It is interesting how like-minded people click, and this app takes that into account."},
-  //   {key: 2, name: "A Tenzies Game App" , info: "Why don't you try playing this boring game I made. Who knows, you might find it interesting."},
-  //   {key: 3, name: "A Random Meme Generator App " , info: "A beginner's task, I know! I still learned to make API calls with this one."},
-  // ];
-
-  const [job, setJob] = React.useState("");
+  // const [job, setJob] = React.useState("");
   const professions = React.useMemo(() => (["A Frontend Developer", "An AWS Certified Cloud Practitioner", "A Chemical Engineer"]), []);
   // const [currentLetterIndex, setCurrentLetterIndex] = React.useState(0);
   // const [currentJob, setCurrentJob] = React.useState(professions[0]);
