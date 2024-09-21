@@ -7,16 +7,16 @@
     background-color: rgba(247, 153, 247,0.1);
     width: 65rem;
     height: 17.1rem;
-    color: rgb(255, 255, 255);
+    color: rgb(247, 153, 247);
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 40px; 
     border-radius: 5px;
 }
 .project-container:hover{
-    border: 1px solid rgb(247, 153, 247);
+    border: 1px solid rgb(255, 254, 255);
     color: rgb(247, 153, 247);
-    width: 68rem;
+    width: 67rem;
 }
 .project-links{
     display: grid;

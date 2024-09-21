@@ -4,7 +4,6 @@
     padding: 0;
 }
 .about-me-header{
-    position: absolute;
     width: 200px;
     height: 10px;
     transform: translate(40.9rem, -3.5rem);

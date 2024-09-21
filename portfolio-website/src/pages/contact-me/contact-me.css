@@ -1,0 +1,53 @@
+.contact-me-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px;
+    margin-top: 2rem;
+    color: rgb(255, 255, 255);
+}
+.mode-of-contact{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.mode-of-contact button{
+    color: rgb(228, 208, 228);
+    border: 2px solid rgb(247, 153, 247);
+    border-radius: 20px;
+    width: 190px;
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+    background-color: rgba(247, 153, 247, 0.5);
+    transition: background-color 0.4s ease-in-out;
+}
+.mode-of-contact button:hover{
+    background-color: rgb(247, 153, 247);
+    color: black;
+}
+.form-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.form-container input {
+    width: 25rem;
+    height: 50px;
+    border-radius: 10px ;
+    border: 2px solid rgb(247, 153, 247);
+    padding: 5px;
+    color: rgb(247, 153, 247);
+    background-color: transparent;
+}
+.form-container textarea{
+    border-radius: 10px ;
+    border: 2px solid rgb(247, 153, 247);
+    padding: 5px;
+    color: rgb(247, 153, 247);
+    background-color: transparent;
+}
