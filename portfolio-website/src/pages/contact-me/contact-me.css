@@ -36,7 +36,7 @@
     gap: 10px;
 }
 .form-container input {
-    width: 25rem;
+    width: 26rem;
     height: 50px;
     border-radius: 10px ;
     border: 2px solid rgb(247, 153, 247);
@@ -50,4 +50,12 @@
     padding: 5px;
     color: rgb(247, 153, 247);
     background-color: transparent;
+}
+.form-container input:hover, .form-container input:focus{
+    background-color: rgba(247, 153, 247, 0.5);
+    color: rgb(255, 255, 255);
+}
+.form-container textarea:hover, .form-container textarea:focus{
+    background-color: rgba(247, 153, 247, 0.5);
+    color: rgb(255, 255, 255);
 }
