@@ -48,8 +48,8 @@ const ContactMe = () => {
                 <h5>Get in Touch</h5>
                 <h1>Contact me</h1>
                 <div className="mode-of-contact">
-                    <button onClick={openForm}><FontAwesomeIcon icon={faEnvelope} />Send me a mail</button>
-                    <button onClick={openLinkedIn}><FontAwesomeIcon icon={faLinkedin} />LinkedIn</button>
+                    <button onClick={openForm}>Send me a mail<FontAwesomeIcon icon={faEnvelope} /></button>
+                    <button onClick={openLinkedIn}>LinkedIn<FontAwesomeIcon icon={faLinkedin} /></button>
                 </div>
                 {isActive ? (
                     <div className="form-container">
