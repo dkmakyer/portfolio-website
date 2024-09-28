@@ -67,3 +67,36 @@
     font-size: 20px;
     text-decoration: underline;
 }
+
+@media (max-width: 640px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: auto;
+        width: 100vw;
+    }
+    .navigation{
+        transform: translateX(-3rem);
+    }
+    .my-name{
+        transform: translateX(3rem);
+    }
+    .navigation a:nth-of-type(4){
+        transform: translateX(-3rem);
+        background-color: none;
+    }
+}
+@media (min-width: 641px) and (max-width: 1007px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: auto;
+        min-width: 100vw;
+    }
+    .navigation{
+        transform: translateX(-15rem);
+    }
+    .my-name{
+        transform: translateX(3rem);
+    }
+}

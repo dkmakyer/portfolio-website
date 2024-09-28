@@ -12,8 +12,8 @@
     margin-top: 2rem;
 }
 .skills h2{
-    transform: translateX(35rem);    
-    color: rgb(247, 153, 247);
+    transform: translateX(35rem); 
+    color: rgb(255, 255, 255);
 }
 .skill:nth-of-type(1){
     grid-column: 1/ 2;
@@ -65,6 +65,9 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .skills h2{
+        transform: translateX(11rem);
+    }
     .skill li{
         font-size: 13px;
     }
@@ -74,6 +77,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .skills h2{
+    transform: translateX(-35rem);}
     .skill li{
         font-size: 13px;
     }

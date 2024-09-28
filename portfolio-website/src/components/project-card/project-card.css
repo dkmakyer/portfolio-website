@@ -47,3 +47,30 @@
 .project-info .info{
     transform: translateY(-20px);
 }
+
+@media (max-width: 640px) {
+    .project-container{
+        height: 40rem;
+        width: 25rem;
+        pointer-events: none;
+    }
+    .project-info{
+        transform: translate(-22rem, 17rem);
+    }
+    .project-image img{
+        width: 25rem;
+    }
+}
+@media (min-width: 641px) and (max-width: 1007px){
+    .project-container{
+        height: 40rem;
+        width: 25rem;
+        pointer-events: none;
+    }
+    .project-info{
+        transform: translate(-22rem, 17rem);
+    }
+    .project-image img{
+        width: 25rem;
+    }
+}
