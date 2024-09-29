@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import "./home.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 // import {useInterval} from "react-use";
 import Typing from "react-typing-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

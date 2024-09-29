@@ -21,7 +21,7 @@
 
 .craftlab{
     padding: 20px;
-    height: 60vh;
+    height: 65vh;
     width: 45rem;
     box-sizing: border-box;
     margin-bottom: 30px;
@@ -29,7 +29,6 @@
     color: rgb(0, 0, 0);
     z-index: 1;
     border-radius: 5px;
-    text-shadow: 1px 1px 0 rgb(255, 255, 255);
     filter: blur(0.5px);
     transition: all 0.2s ease;
     box-sizing: border-box;
@@ -40,40 +39,37 @@
     border: 5px solid rgba(247, 153, 247);
     color: rgb(255, 255, 255);
     box-sizing: border-box;
-    text-shadow: 1px 1px 0 rgb(247, 153, 247);
     filter: none;
     background-color: rgba(201, 198, 195, 0.2);
     width: 47rem;
-    height: 65vh;
+    height: 67vh;
 }
 .amalitech{
     padding: 20px;
-    height: 60vh;
-    width: 45rem;
+    height: 73vh;
+    width: 42rem;
     box-sizing: border-box;
     margin-bottom: 30px;
     background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
     color: rgb(0, 0, 0);
     z-index: 1;
     border-radius: 5px;
-    text-shadow: 1px 1px 0 rgb(255, 255, 255);
     filter: blur(0.5px);
     transition: all 0.2s ease;
     box-sizing: border-box;
     padding-bottom: 50px;
     margin-top: 50px;
-    transform: translate(33rem, -2rem);
+    transform: translate(28rem, -2rem);
 }
 .amalitech:hover{
     background-image: none;
     border: 5px solid rgba(247, 153, 247);
     color: rgb(255, 255, 255);
     box-sizing: border-box;
-    text-shadow: 1px 1px 0 rgb(247, 153, 247);
     filter: none;
     background-color: rgba(201, 198, 195, 0.2);
-    width: 47rem;
-    height: 63vh;
+    width: 44rem;
+    height: 76vh;
 }
 
 .date:nth-of-type(1){
@@ -111,9 +107,7 @@
     border-radius: 5px;
     z-index: 2;
 }
-.amalitech{
-    height: 65vh;
-}
+
 @media (min-width: 641px) and (max-width: 1007){
     .amalitech{
         transform: translateX(-10rem);

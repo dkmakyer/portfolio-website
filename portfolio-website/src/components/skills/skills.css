@@ -49,6 +49,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.skill ul li{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
 .skill ul .non-svg{
     width: 35px;
     height: 35px;

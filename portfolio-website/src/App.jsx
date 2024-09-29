@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Header from "./components/header/Header";
 import About from "./pages/about-me/About";
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/contact-me" element={<ContactMe />}/>
       </Routes>
     </Router>
-  );
+  )
 };
 
 export default App;
