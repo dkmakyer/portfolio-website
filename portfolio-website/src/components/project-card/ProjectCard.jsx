@@ -27,6 +27,12 @@ const ProjectCard = (props) => {
             case "meme-app-vercel" : 
                 projectUrl = "https://meme-generator-react-nine.vercel.app/";
                 break;
+            case "responsive-design-tester-github" : 
+                projectUrl = "https://github.com/dkmakyer/responsive-design-tester-React";
+                break;           
+            case "responsive-design-tester-vercel" : 
+                projectUrl = "https://responsive-design-tester-react.vercel.app/";
+                break;                
             default: 
                 return;
         }
