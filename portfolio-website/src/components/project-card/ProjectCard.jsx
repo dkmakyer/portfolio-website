@@ -32,7 +32,13 @@ const ProjectCard = (props) => {
                 break;           
             case "responsive-design-tester-vercel" : 
                 projectUrl = "https://responsive-design-tester-react.vercel.app/";
-                break;                
+                break;     
+            case "ecommerce-github" : 
+                projectUrl = "https://github.com/dkmakyer/ecommerce-website";
+                break;           
+            case "ecommerce-vercel" : 
+                projectUrl = "https://ecommerce-website-silk-alpha.vercel.app/";
+                break;            
             default: 
                 return;
         }

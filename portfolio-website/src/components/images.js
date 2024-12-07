@@ -18,10 +18,10 @@ import socialApp from "../assets/social-networking-app-pic.jpg";
 import tenziesApp from "../assets/tenzies-game-app-pic.jpg";
 import redirect from "../assets/redirect-pic.png";
 import responsiveApp from "../assets/responsive-design-tester.jpg";
-
+import ecommerceApp from "../assets/ecommerce-website-pic.png";
 
 const images = {
-    html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic, github, bash, sql, craftlab, amalitech, memeApp, socialApp, tenziesApp, redirect, responsiveApp
+    html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic, github, bash, sql, craftlab, amalitech, memeApp, socialApp, tenziesApp, redirect, responsiveApp, ecommerceApp
 };
 
 export default images;
