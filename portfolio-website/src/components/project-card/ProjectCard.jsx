@@ -38,7 +38,13 @@ const ProjectCard = (props) => {
                 break;           
             case "ecommerce-vercel" : 
                 projectUrl = "https://ecommerce-website-silk-alpha.vercel.app/";
-                break;            
+                break;  
+            case "shopping-list-github" : 
+                projectUrl = "https://github.com/dkmakyer/Azubi-frontend-project";
+                break;           
+            case "shopping-list-vercel" : 
+                projectUrl = "https://azubi-frontend-project.vercel.app/";
+                break;           
             default: 
                 return;
         }

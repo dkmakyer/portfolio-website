@@ -19,9 +19,10 @@ import tenziesApp from "../assets/tenzies-game-app-pic.jpg";
 import redirect from "../assets/redirect-pic.png";
 import responsiveApp from "../assets/responsive-design-tester.jpg";
 import ecommerceApp from "../assets/ecommerce-website-pic.png";
+import shoppingSpree from "../assets/shopping-spree.png";
 
 const images = {
-    html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic, github, bash, sql, craftlab, amalitech, memeApp, socialApp, tenziesApp, redirect, responsiveApp, ecommerceApp
+    html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic, github, bash, sql, craftlab, amalitech, memeApp, socialApp, tenziesApp, redirect, responsiveApp, ecommerceApp, shoppingSpree
 };
 
 export default images;
