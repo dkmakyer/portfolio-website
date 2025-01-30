@@ -44,6 +44,11 @@ const ProjectCard = (props) => {
                 break;           
             case "shopping-list-vercel" : 
                 projectUrl = "https://azubi-frontend-project.vercel.app/";
+            case "dashboard-github" : 
+                projectUrl = "https://github.com/dkmakyer/admin-dashboard";
+                break;           
+            case "dashboard-vercel" : 
+                projectUrl = "https://admin-dashboard-lime-seven-95.vercel.app/#/";
                 break;           
             default: 
                 return;

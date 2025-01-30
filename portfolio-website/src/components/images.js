@@ -20,9 +20,10 @@ import redirect from "../assets/redirect-pic.png";
 import responsiveApp from "../assets/responsive-design-tester.jpg";
 import ecommerceApp from "../assets/ecommerce-website-pic.png";
 import shoppingSpree from "../assets/shopping-spree.png";
+import dashboardApp from "../assets/dashboard.png";
 
 const images = {
-    html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic, github, bash, sql, craftlab, amalitech, memeApp, socialApp, tenziesApp, redirect, responsiveApp, ecommerceApp, shoppingSpree
+    html, css, js, react, bootstrap, git, aws, tailwindcss, svelte, myPic, github, bash, sql, craftlab, amalitech, memeApp, socialApp, tenziesApp, redirect, responsiveApp, ecommerceApp, shoppingSpree, dashboardApp
 };
 
 export default images;
