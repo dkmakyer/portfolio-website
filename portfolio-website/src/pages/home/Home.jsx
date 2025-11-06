@@ -1,7 +1,6 @@
 import React, { useCallback } from "react";
 import "./home.css";
 import { Link} from "react-router-dom";
-// import {useInterval} from "react-use";
 import Typing from "react-typing-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
@@ -74,7 +73,6 @@ const Home = () => {
   return (
     <>
       <div className="home-container">
-        <header />
         <main>
           <div className="introduction">
             <h1>
