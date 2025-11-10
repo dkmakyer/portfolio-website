@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.about-me-header{
+/* .about-me-header{
     width: 200px;
     height: 10px;
     transform: translate(40.9rem, -3.5rem);
@@ -16,4 +16,4 @@
 }
 .about-me-header .is-active{
     text-decoration: underline;
-}
+} */

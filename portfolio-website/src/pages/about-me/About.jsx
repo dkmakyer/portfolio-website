@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <Skills/>
-            <Experience/>
+            {/* <Experience/> */}
         </>
   )
 }
