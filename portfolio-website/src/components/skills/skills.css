@@ -5,24 +5,21 @@
 }
 
 .skills{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
 }
 .skills-wrapper{
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: auto;
+    margin: auto 4rem;
 }
 .skills h2{ 
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);;
     font-size: 2.5rem;
-    margin: 2rem auto;
+    text-align: center;
 }
 
 .skill h4{
@@ -41,7 +38,6 @@
 .skill:hover{
     background-image: none;
     border: 5px solid rgba(247, 153, 247);
-    width: 28rem;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
     text-shadow: 1px 1px 0 rgb(247, 153, 247);
@@ -69,11 +65,6 @@
     margin-bottom: 5px;
 }
 
-@media (min-width: 480px){
-    .skills-wrapper{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media (min-width: 768px){
     .skills-wrapper{
