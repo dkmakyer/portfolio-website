@@ -11,9 +11,14 @@ const Experience = () => {
                 <div className="experience-grid">
                     <div className='cont craftlab'>
                         <div className="info">
-                            <h3>Fullstack development Intern<span><p className='craftlab-logo'><img src={craftlab} alt="craftlab-logo" /></p></span></h3>
-                            <p className='date'>May 2024 - July 2024</p>
-                            <p className='location'><span>Meta-Craftlab -</span>Mumbai Maharashtra, India</p>
+                            <div className='info-header'>
+                                <h3>Fullstack development Intern</h3>
+                                <p className='date'>May 2024 - July 2024</p>
+                            </div>
+                            <div className='info-location-logo'>
+                                <img src={craftlab} alt="craftlab-logo" />
+                                <p className='location'><span>Meta-Craftlab -</span>Mumbai Maharashtra, India</p>
+                            </div>
                             <ul>
                                 <li>Utilized Git for version control and GitHub for repository management, pivoting collaborative project workflows and code management.</li>
                                 <li>Developed a responsive design tester for testing the responsiveness of websites with predefined dimensions using SvelteJs.</li>
@@ -25,11 +30,16 @@ const Experience = () => {
                     </div>
                     <div className='cont amalitech'>
                         <div className="info">
-                            <h3>AWS re/Start Learner <span><p className='amalitech-logo'><img src={amalitech} alt="amalitech-logo" /></p></span></h3>
-                            <p className='date'>November 2023- March 2024</p>
-                            <p className='location'><span>AmaliTech Services</span> - Legon,Ghana</p>
+                            <div className="info-header">
+                                <h3>AWS re/Start Learner</h3>
+                                <p className='date'>November 2023- March 2024</p>
+                            </div>
+                            <div className="info-location-logo">
+                                <img src={amalitech} alt="amalitech-logo" />
+                                <p className='location'><span>AmaliTech Services</span> - Legon,Ghana</p>
+                            </div>
                             <ul>
-                                <li>Utilized Linux system administration and automation through Bashscripting for efficient management and customization of system configurations, leading to streamlined operations and reduced downtime for the employer’s IT infrastructure.</li>
+                                <li>Utilized Linux system administration and automation through Bash scripting for efficient management and customization of system configurations, leading to streamlined operations and reduced downtime for the employer’s IT infrastructure.</li>
                                 <li>Deployed and managed AWS cloud services via the management console and CloudFormation, empowering the employer to leverage scalable computing, storage, and networking solutions efficiently, optimizing resource utilization and reducing operational costs.</li>
                                 <li>Operated the Database Management systems and the general SQL commands that can be used to manipulate real world data effectively for informed decision-making and business success.</li>
                             </ul>

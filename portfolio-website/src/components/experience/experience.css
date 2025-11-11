@@ -5,29 +5,26 @@
 }
 
 .experience-container{
-    box-sizing: border-box;
-    padding: 50px;
-    margin-top: 2rem;
+    padding: 4rem;
     color: rgb(255, 255, 255);
 }
-.experience-container .experience-grid{
+.experience-grid{
     display: grid;
     grid-template-columns: 1fr;
+    gap: 3rem;
 }
 
 .experience-container h2{
+    margin-bottom: 4rem;
+    font-size: 2rem;
     text-align: center;
-}
+} 
 
 .craftlab{
-    padding: 20px;
-    height: 65vh;
-    width: 45rem;
+    padding: 1.5rem;
     box-sizing: border-box;
-    margin-bottom: 30px;
     background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
     color: rgb(0, 0, 0);
-    z-index: 1;
     border-radius: 5px;
     filter: blur(0.5px);
     transition: all 0.2s ease;
@@ -41,15 +38,12 @@
     box-sizing: border-box;
     filter: none;
     background-color: rgba(201, 198, 195, 0.2);
-    width: 47rem;
-    height: 67vh;
 }
+
 .amalitech{
-    padding: 20px;
-    height: 73vh;
-    width: 42rem;
+    min-width: 21rem;
+    padding: 1.5rem;
     box-sizing: border-box;
-    margin-bottom: 30px;
     background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
     color: rgb(0, 0, 0);
     z-index: 1;
@@ -57,9 +51,6 @@
     filter: blur(0.5px);
     transition: all 0.2s ease;
     box-sizing: border-box;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    transform: translate(28rem, -2rem);
 }
 .amalitech:hover{
     background-image: none;
@@ -68,74 +59,32 @@
     box-sizing: border-box;
     filter: none;
     background-color: rgba(201, 198, 195, 0.2);
-    width: 44rem;
-    height: 76vh;
-}
 
-.date:nth-of-type(1){
-    transform: translate(31rem, -3.6rem);
-}
-.amalitech .date{
-    transform: translate(25rem, -3.6rem);
-}
-.location{
-    transform: translateY(-2.5rem);
-}
-.info .location span{
-    font-size: 22px;
-}
-.info ul{
-    width: 38rem;
-    transform: translateY(-40px);
-}
-.info h3{
-    display: flex;
-    align-items: center;
 }
 
 .craftlab img{
-    transform: translate(2rem, 1rem);
     width: 70px;
     height: 70px;
     border-radius: 5px;
     z-index: 2;
 }
 .amalitech img{
-    transform: translate(2rem, 1rem);
     width: 70px;
     height: 70px;
     border-radius: 5px;
     z-index: 2;
 }
 
-@media (min-width: 641px) and (max-width: 1007){
-    .amalitech{
-        transform: translateX(-10rem);
-    }
-    /* dont forget to work on  this tomorrow */
+.info-location-logo, .info-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
-@media (max-width: 640px){
-    .craftlab, .amalitech{
-        width: 30rem;
-        pointer-events: none;
-    }
-    .craftlab{
-        height: 30rem;
-    }
-    .date:nth-of-type(1){
-        transform: translate(0.1rem, 2rem);
-    }
-    .amalitech .date{
-        transform: translate(-0.1rem, 1.9rem);
-    }
-    .amalitech{
-        margin-top: 50px;
-        transform: translateX(0.1rem);
-    }
-    .amalitech{
-        height: 550px;
-    }
-    .info ul{
-        width: 25rem;
+
+@media (min-width: 768px) {
+    .experience-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
