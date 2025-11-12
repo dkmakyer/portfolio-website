@@ -45,20 +45,22 @@ const ContactMe = () => {
     return (
         <>
             <div className="contact-me-container">
-                <h5>Get in Touch</h5>
-                <h1>Contact me</h1>
-                <div className="mode-of-contact">
-                    <button onClick={openForm}>Send me a mail<FontAwesomeIcon icon={faEnvelope} /></button>
-                    <button onClick={openLinkedIn}>LinkedIn<FontAwesomeIcon icon={faLinkedin} /></button>
-                </div>
-                {isActive ? (
-                    <div className="form-container">
-                        <input name='name' value={formData.name} type="text" placeholder='Name: ' onChange={handleChange} />
-                        <input name='email' value={formData.email} type="text" placeholder='Email: ' onChange={handleChange} />
-                        <textarea name='message' value={formData.message} onChange={handleChange} id="message-box" placeholder="Message: " cols="30" rows="10"></textarea>
-                        <input type="submit" onClick={handleSubmit} id='submit-button' />
+                <div className="contact-me-wrapper">
+                    <h5>Get in Touch</h5>
+                    <h1>Contact me</h1>
+                    <div className="mode-of-contact">
+                        <button onClick={openForm}>Send me a mail<FontAwesomeIcon icon={faEnvelope} /></button>
+                        <button onClick={openLinkedIn}>LinkedIn<FontAwesomeIcon icon={faLinkedin} /></button>
                     </div>
-                ) : null}
+                    {isActive ? (
+                        <div className="form-container">
+                            <input name='name' value={formData.name} type="text" placeholder='Name: ' onChange={handleChange} />
+                            <input name='email' value={formData.email} type="text" placeholder='Email: ' onChange={handleChange} />
+                            <textarea name='message' value={formData.message} onChange={handleChange} id="message-box" placeholder="Message: " cols="30" rows="10"></textarea>
+                            <input type="submit" onClick={handleSubmit} id='submit-button' />
+                        </div>
+                    ) : null}
+                </div>
             </div>
         </>
     );
