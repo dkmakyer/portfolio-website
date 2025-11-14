@@ -20,7 +20,7 @@
     text-align: center;
 } 
 
-.craftlab{
+.workplace{
     padding: 1.5rem;
     box-sizing: border-box;
     background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
@@ -31,7 +31,7 @@
     box-sizing: border-box;
     padding-bottom: 50px;
 }
-.craftlab:hover{
+.workplace:hover{
     background-image: none;
     border: 5px solid rgba(247, 153, 247);
     color: rgb(255, 255, 255);
@@ -40,39 +40,17 @@
     background-color: rgba(201, 198, 195, 0.2);
 }
 
-.amalitech{
-    min-width: 21rem;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    background-image: linear-gradient(to right, rgb(209, 190, 209), rgb(247, 153, 247));
-    color: rgb(0, 0, 0);
-    z-index: 1;
-    border-radius: 5px;
-    filter: blur(0.5px);
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-}
-.amalitech:hover{
-    background-image: none;
-    border: 5px solid rgba(247, 153, 247);
-    color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    filter: none;
-    background-color: rgba(201, 198, 195, 0.2);
 
-}
 
-.craftlab img{
+.workplace img{
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    z-index: 2;
 }
-.amalitech img{
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    z-index: 2;
+
+.location{
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .info-location-logo, .info-header{
