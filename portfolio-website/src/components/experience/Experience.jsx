@@ -3,7 +3,7 @@ import "./experience.css";
 import images from '../images';
 
 const Experience = () => {
-    const { craftlab, amalitech } = images;
+    const { craftlab, amalitech, npontuLogo } = images;
 
     const experienceData = [
         {
@@ -18,6 +18,20 @@ const Experience = () => {
                 "Delivered key projects including a Journal App with localStorage-based data persistence and a real-time Character Counter App showcasing dynamic DOM manipulation and event handling.",
                 "Embraced testing best practices using Jest to ensure code reliability and maintainability, contributing to a culture of quality assurance within the development team.",
                 "Participated in professional communication workshops to refine presentation, collaboration, and stakeholder interaction skills essential for successful project execution."
+            ]
+        },
+        {
+            id: 2,
+            position: "Platform Deveopment Intern",
+            date: "February 2025- April 2025",
+            srcImg: npontuLogo,
+            location: "Npontu Technologies - Accra, Ghana",
+            duties: [
+                "Converted detailed UI/UX designs into responsive and accessible interfaces for a Learning Management System and a Task Management App using HTML, CSS, and vanilla JavaScript.",
+                "Contributed to backend integration by implementing essential CRUD operations and authentication flows using Laravel, enhancing application functionality and user management.",
+                "Delivered key projects including a Journal App with localStorage-based data persistence and a real-time Character Counter App showcasing dynamic DOM manipulation and event handling.",
+                "Collaborated in a cross-functional team environment, demonstrating strong adaptability and code ownership.",
+                "Engaged in code reviews and knowledge-sharing sessions to foster continuous learning and uphold coding standards within the development team."
             ]
         },
         {
